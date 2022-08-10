@@ -19,7 +19,7 @@ def get_initial_vars_values() :
     v0_data      = np.loadtxt("source/initial_data/v0.csv")
     
     # set up grid in radial direction in areal polar coordinates
-    dR = 0.01;
+    dR = 0.01
     length = np.size(grr0_data)
     R = np.linspace(0, dR*(length-1), num=length)
     f_grr   = interp1d(R, grr0_data)
